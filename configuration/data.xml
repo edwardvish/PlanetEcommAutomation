@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Environment>
+    <!-- General -->
+    <WaitTime>2</WaitTime>
+    <ScreenshotPath>allure-screen-shots/</ScreenshotPath>
+    <!-- Web -->
+    <Browser>Chrome</Browser>
+    <URL>https://www.planetcinema.co.il/#/</URL>
+    <UserName>edward.vishnivetzki@gmail.com</UserName>
+    <Password>P@ssw0rd</Password>
+    <!--<user_data_dir>./ddt/coupons.csv</user_data_dir>-->
+    <coupon_codes>./ddt/coupons.csv</coupon_codes>
+    <Applitools>false</Applitools> <!--true / false-->
+    <ApplitoolsAPI>97kBX5NUm9MHlsURpcVpkZXXJno6FmmihP5z8RUXqSCk110</ApplitoolsAPI>
+
+</Environment>
