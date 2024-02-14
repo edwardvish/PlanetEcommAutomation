@@ -30,8 +30,8 @@ def wait_for_element(oper, locator):
     except NoSuchElementException:
         print("Element not found on the page.")
 
-@allure.step('Read the contents of the CSV file and storing it into a dictionary')
 
+@allure.step('Read the contents of the CSV file and storing it into a dictionary')
 def read_csv(file_name):
     data = []
     with open(file_name, mode='r') as file:
@@ -51,14 +51,6 @@ def search_user(param):
     elif param == 'Email':
         emails = [row[param].strip() for row in data]
         return emails
-    # elif param == 'Domain':
-    #     emails = [row[param].strip() for row in data]
-    #     pattern = r"@([A-Za-z0-9.-]+)"
-    #     for email in emails:
-    #         match = re.search(pattern, email)
-    #         if match:
-    #             domain.append(match.group(1))
-    #     return domain
     elif param == 'Username':
         usernames = [row[param].strip() for row in data]
         return usernames
@@ -72,13 +64,12 @@ class Oper:
 
 # Enum for selecting a user by name or index
 
-class By:
-    INDEX = 'index'
-    USER = 'name'
+class Type:
+    REGULAR = 'regular'
+    # USER = 'name'
 
 
 class SearchBy:
     NAME = 'Name'
     EMAIL = 'Email'
     UNAME = 'Username'
-    # DOMAIN = 'Domain'

@@ -43,5 +43,14 @@ class Verifications(UiActions):
     def verify_num_of_elements(users, actual):
         assert len(users) == actual, 'The number of elements in list:' + str(len(users)) + 'does not match expected'
 
+    @staticmethod
+    @allure.step('Verify total sum of tickets')
+    def verify_total_sum(actual, expected):
+        parts = actual.split(" ")
+        num = parts[0]
+        assert num == expected, 'The total amount is' + str(num) + 'the expected amount should be' + str(expected)
+
+
+
 
 

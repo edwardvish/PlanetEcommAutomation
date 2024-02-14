@@ -4,47 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PlanetCinema.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ddt/coupons.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extensions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extensions/ui_actions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extensions/verifications.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/web_pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/web_pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/web_pages/main_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_grafana.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/base_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/common_ops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/debug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/event_listeners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/manage_pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workflows/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
+    <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="start new project &#10;&quot;Planet Cinema Web Automation test&quot;">
+      <change afterPath="$PROJECT_DIR$/ddt/ticket_type.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddt/ticketgroup_message.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddt/tickets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinet.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/web_pages/bookings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/web_pages/ecom/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/web_pages/ecom/ticket_selection_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/web_pages/event_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/web_pages/my_profile_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddt/coupons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ddt/coupons.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/verifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/verifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/common_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workflows/web_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2cGa6KYtL3bXuovel9MJhDlGuJL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,11 +55,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/pythonProject/FinalProject/PlanetCinema"
+    "last_opened_file_path": "C:/pythonProject/FinalProject/PlanetCinema/pages/web_pages/ecom"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\pythonProject\FinalProject\PlanetCinema\pages\web_pages\ecom" />
+      <recent name="C:\pythonProject\FinalProject\PlanetCinema\pages\web_pages" />
       <recent name="C:\pythonProject\FinalProject\PlanetCinema" />
       <recent name="C:\pythonProject\FinalProject\PlanetCinema\configuration" />
     </key>
@@ -87,6 +85,15 @@
       <option name="presentableId" value="Default" />
       <updated>1707740192842</updated>
     </task>
+    <task id="LOCAL-00001" summary="start new project &#10;&quot;Planet Cinema Web Automation test&quot;">
+      <option name="closed" value="true" />
+      <created>1707744664738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707744664738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -94,5 +101,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="start new project &#10;&quot;Planet Cinema Web Automation test&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="start new project &#10;&quot;Planet Cinema Web Automation test&quot;" />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="770325">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/pages/web_pages/ecom/ticket_selection_page.py" />
+                </list>
+              </option>
+              <option name="id" value="770325" />
+              <option name="initiateTms" value="1707920742597" />
+              <option name="request" value="what do ?&#10;tkt_name, ticket_price = UiActions.get_text(ticket[0]),UiActions.get_text(ticket[1])" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The line `tkt_name, ticket_price = UiActions.get_text(ticket[0]),UiActions.get_text(ticket[1])` is assigning the return values of the `UiActions.get_text()` method to the variables `tkt_name` and `ticket_price`. &#10;&#10;The `UiActions.get_text()` method is used to retrieve the text content of a web element. In this case, it is being called with `ticket[0]` and `ticket[1]` as arguments, which are the elements obtained from the `ticket_info` XPath expression.&#10;&#10;To provide a more accurate response, I would need to see the implementation of the `UiActions` class and the `get_text()` method." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1707920746486" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/pages/web_pages/ecom/ticket_selection_page.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

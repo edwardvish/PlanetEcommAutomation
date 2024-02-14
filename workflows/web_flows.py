@@ -16,7 +16,9 @@ from utils.common_ops import wait_for_element, Oper, get_data, read_csv, search_
 # from pages.web_pages.main_page import MainPage
 
 class WebFlows:
-    user_data = read_csv(get_data('user_data_dir'))
+    coupon_code = read_csv(get_data('coupon_codes'))
+    ticket_info = read_csv(get_data('ticket_info'))
+
 
     @staticmethod
     @allure.step('Login to grafana')
