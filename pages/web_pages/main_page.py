@@ -27,3 +27,7 @@ class MainPage(UiActions):
     def get_main_title(self):
         title = UiActions.get_text(self.driver, main_title)
         return title
+
+    def get_login_page(self):
+        UiActions.click(self.driver, acc_login)
+

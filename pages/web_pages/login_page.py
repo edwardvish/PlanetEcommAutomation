@@ -17,6 +17,9 @@ class LoginPage(UiActions):
     def __init__(self, driver):
         self.driver = driver
 
+    def get_page_title(self):
+        return self.get_text(self.driver, title)
+
     def set_username(self, user):
         self.set_text(self.driver, email, user)
 
@@ -33,10 +36,6 @@ class LoginPage(UiActions):
         if is_fail:
             message = self.get_login_message()
             return message
-
-    def click_skip(self):
-        WebDriverWait(self.driver, get_data('WaitTime')).until(EC.visibility_of_element_located(skip_button)).click()
-        # return MainPage
 
     def get_login_message(self):
         try:

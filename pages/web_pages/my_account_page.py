@@ -13,9 +13,15 @@ account_settings = (By.XPATH, "//div[contains(text(),'Account settings')]")
 payments = (By.XPATH, "//div[contains(text(),'Payments')]")
 
 
-class LoginPage(UiActions):
+class MyAccountPage(UiActions):
     def __init__(self, driver):
         self.driver = driver
+
+    def get_Url(self):
+        return self.driver.current_url
+
+
+
 
 
 
