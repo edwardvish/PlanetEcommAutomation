@@ -62,10 +62,9 @@ def get_edge():
 
 @pytest.mark.usefixtures('init_web_driver')
 def pytest_exception_interact(node, call, report):
-    driver = node.funcargs['request'].cls.driver
-    if report.failed:
-        # Check if driver was invoked to handle cases like API testing
-        if driver is not None:
+    if isinstance(node, (pytest.Function, pytest.Class)):
+        driver = node.funcargs['request'].cls.driver
+        if report.failed and driver is not None:
             now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             screenshot_path = os.path.join(get_data('ScreenshotPath'), f'screenshot_{now}.png')
             driver.get_screenshot_as_file(screenshot_path)

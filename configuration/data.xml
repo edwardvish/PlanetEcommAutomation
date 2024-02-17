@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Environment>
     <!-- General -->
-    <WaitTime>2</WaitTime>
+    <WaitTime>5</WaitTime>
     <ScreenshotPath>allure-screen-shots/</ScreenshotPath>
     <!-- Web -->
     <Browser>Chrome</Browser>
-    <URL>https://www.planetcinema.co.il/#/</URL>
+    <URL>https://www.planetcinema.co.il/?lang=en_GB#/</URL>
     <UserName>edward.vishnivetzki@gmail.com</UserName>
     <Password>P@ssw0rd</Password>
     <!--<user_data_dir>./ddt/coupons.csv</user_data_dir>-->

@@ -11,7 +11,7 @@ import csv
 
 @allure.step('Parse the content of the XML file')
 def get_data(node_name):
-    tree = ET.parse('../configuration/data.xml')
+    tree = ET.parse('./configuration/data.xml')
     root = tree.getroot()
     return root.find('.//' + node_name).text
 
@@ -26,7 +26,8 @@ def wait_for_element(oper, locator):
             WebDriverWait(conft.driver, timeout).until(ec.presence_of_element_located(locator))
         elif oper == 'displayed':
             WebDriverWait(conft.driver, timeout).until(ec.visibility_of_element_located(locator))
-
+        elif oper == 'clickable':
+            WebDriverWait(conft.driver, timeout).until(ec.element_to_be_clickable(locator))
     except NoSuchElementException:
         print("Element not found on the page.")
 
@@ -60,6 +61,7 @@ def search_user(param):
 class Oper:
     Element_Exists = 'exists'
     Element_Displayed = 'displayed'
+    Element_Clickable = 'clickable'
 
 
 # Enum for selecting a user by name or index

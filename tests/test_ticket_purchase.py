@@ -1,6 +1,4 @@
 import allure
-import pytest
-from tests.conftest import eyes
 from utils.base_test import BaseTest
 from utils.common_ops import get_data, read_csv, SearchBy
 from workflows.web_flows import WebFlows
@@ -13,6 +11,7 @@ class TestWeb(BaseTest):
     @allure.title('Test01: Verify Login my account')
     @allure.description('This test verifies a successful login to my account')
     def test_verify_login(self):
+        WebFlows.accept_cookies()
         WebFlows.nav_login_page()
         WebFlows.verify_login_page_title()
         WebFlows.login_to_account(get_data('UserName'), get_data('Password'),0)
