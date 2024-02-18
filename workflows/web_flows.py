@@ -32,7 +32,7 @@ class WebFlows:
             page.web_main_page.get_login_page()
             wait_for_element(Oper.Element_Displayed, pages.web_pages.login_page.title)
         except:
-            print("Could not navigate to login page after " + str(t) + 'attempts')
+            print("Could not navigate to login page")
 
     @staticmethod
     @allure.step('Login to account')
