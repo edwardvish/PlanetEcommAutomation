@@ -1,8 +1,9 @@
 import time
 
 import allure
+
 from utils.base_test import BaseTest
-from utils.common_ops import get_data, read_csv, SearchBy
+from utils.common_ops import get_data
 from workflows.web_flows import WebFlows
 
 
@@ -17,7 +18,7 @@ class TestWeb(BaseTest):
         WebFlows.accept_cookie_msg()
         WebFlows.nav_login_page()
         WebFlows.verify_login_page_title()
-        WebFlows.login_to_account(get_data('UserName'), get_data('Password'),0)
+        WebFlows.login_to_account(get_data('UserName'), get_data('Password'), 0)
         WebFlows.verify_successful_login()
         time.sleep(30)
 
