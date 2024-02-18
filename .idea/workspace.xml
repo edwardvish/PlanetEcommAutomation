@@ -7,10 +7,9 @@
     <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="start new project &#10;&quot;Planet Cinema Web Automation test&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/ui_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/ui_actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/web_pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/main_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_ticket_purchase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ticket_purchase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/common_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common_ops.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/web_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +42,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python tests.Python tests for test_ticket_purchase.TestWeb.executor": "Debug",
+    "Python tests.Python tests for test_ticket_purchase.TestWeb.test_verify_login.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -60,7 +60,7 @@
       <recent name="C:\pythonProject\FinalProject\PlanetCinema" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_ticket_purchase.TestWeb.test_verify_login">
     <configuration name="Python tests for test_ticket_purchase.TestWeb" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PlanetCinema" />
       <option name="ENV_FILES" value="" />
@@ -76,8 +76,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_ticket_purchase.TestWeb.test_verify_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PlanetCinema" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ticket_purchase.TestWeb.test_verify_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_ticket_purchase.TestWeb.test_verify_login" />
         <item itemvalue="Python tests.Python tests for test_ticket_purchase.TestWeb" />
       </list>
     </recent_temporary>
@@ -114,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708001253051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="start new project &#10;&quot;Planet Cinema Web Automation test&quot;">
+      <option name="closed" value="true" />
+      <created>1708179388507</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708179388507</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">

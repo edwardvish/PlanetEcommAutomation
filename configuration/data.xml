@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Environment>
     <!-- General -->
-    <WaitTime>5</WaitTime>
+    <WaitTime>10</WaitTime>
+    <retries>2</retries>
     <ScreenshotPath>allure-screen-shots/</ScreenshotPath>
     <!-- Web -->
     <Browser>Chrome</Browser>

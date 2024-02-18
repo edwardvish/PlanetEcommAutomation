@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from extensions.ui_actions import UiActions
 
 
-cookies_msg_button = (By.CSS_SELECTOR, "#onetrust-accept-btn-handler")
+cookies_msg_button = (By.XPATH, "//button[@id='onetrust-accept-btn-handler']")
 main_title = (By.CSS_SELECTOR, 'a[data-automation-id="header-logo-link"]')
 acc_login = (By.CSS_SELECTOR, 'a[data-automation-id="account-section-link"][aria-label=" Log in"]')
 acc_register = (By.CSS_SELECTOR, 'a[data-automation-id="account-section-link"][aria-label="Register"]')
@@ -31,7 +31,7 @@ class MainPage(UiActions):
         return title
 
     def get_cookies_message(self):
-        return self.find(self.driver,*cookies_msg_button)
+        return self.find(self.driver, *cookies_msg_button)
 
     def accept_cookies(self):
         self.click(self.driver, cookies_msg_button)

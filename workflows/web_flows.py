@@ -16,18 +16,23 @@ class WebFlows:
 
     @staticmethod
     @allure.step('Wait for cookies button to appear and accept all cookies')
-    def accept_cookies():
-        try:
-            wait_for_element(Oper.Element_Displayed, pages.web_pages.main_page.cookies_msg_button)
-            page.web_main_page.accept_cookies()
-        except:
-            print("Cookie acceptance button not found.")
+    def accept_cookie_msg():
+        for i in range(2):
+            try:
+                time.sleep(0.5)
+                wait_for_element(Oper.Element_Displayed, pages.web_pages.main_page.cookies_msg_button)
+                page.web_main_page.accept_cookies()
+            except:
+                print("Cookie acceptance button not found.")
 
     @staticmethod
     @allure.step('Navigate to a the login page from the main page')
     def nav_login_page():
-        page.web_main_page.get_login_page()
-        wait_for_element(Oper.Element_Displayed, pages.web_pages.login_page.title)
+        try:
+            page.web_main_page.get_login_page()
+            wait_for_element(Oper.Element_Displayed, pages.web_pages.login_page.title)
+        except:
+            print("Could not navigate to login page after " + str(t) + 'attempts')
 
     @staticmethod
     @allure.step('Login to account')

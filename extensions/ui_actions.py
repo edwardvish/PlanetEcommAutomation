@@ -57,3 +57,10 @@ class UiActions:
     @allure.step('Hover with the mouse over a web element')
     def mouse_hover(elem1, elem2):
         conf.action.move_to_element(elem1).move_to_element(elem2).click().perform()
+
+    @staticmethod
+    @allure.step('Perform a click with a mouse movement')
+    def mouse_click(locator):
+        conf.action.move_to_element(locator).click().perform()
+
+
