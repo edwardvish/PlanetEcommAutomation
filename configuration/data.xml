@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Environment>
     <!-- General -->
-    <WaitTime>10</WaitTime>
+    <WaitTime>15</WaitTime>
     <retries>2</retries>
     <ScreenshotPath>allure-screen-shots/</ScreenshotPath>
     <!-- Web -->
@@ -9,9 +9,11 @@
     <URL>https://www.planetcinema.co.il/?lang=en_GB#/</URL>
     <UserName>edward.vishnivetzki@gmail.com</UserName>
     <Password>P@ssw0rd</Password>
+    <sites>ddt/sites.csv</sites>
+    <location>Planet Beer Sheva</location>
     <!--<user_data_dir>./ddt/coupons.csv</user_data_dir>-->
-    <coupon_codes>./ddt/coupons.csv</coupon_codes>
-    <ticket_info>./ddt/tickets</ticket_info>
+    <coupon_codes>ddt/coupons.csv</coupon_codes>
+    <ticket_info>ddt/tickets.csv</ticket_info>
     <Applitools>false</Applitools> <!--true / false-->
     <ApplitoolsAPI>97kBX5NUm9MHlsURpcVpkZXXJno6FmmihP5z8RUXqSCk110</ApplitoolsAPI>
 

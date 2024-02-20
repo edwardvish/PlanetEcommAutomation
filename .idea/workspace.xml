@@ -4,8 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="- Added features:&#10;* fixed issue with locator_is_not_clickable due to page animation, added 2 retries.">
+    <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="Optimize imports">
+      <change afterPath="$PROJECT_DIR$/allure-results/02e5ec17-61d8-4abd-9524-680adc693123-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/137773fd-e95f-4138-9ae3-6f58ed355f86-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1c93acaa-a96f-4cc7-ba6e-a129893ee260-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/217a0425-c1de-48d5-99c7-d1e9b9121d89-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2dc53749-7d68-499a-a54f-06ca035c046d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4f3bca7a-d87a-4c6c-9508-843d9eb1cdd4-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/505a2849-6de1-467d-8df2-62d927f73f68-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6337ad9a-86fe-4b26-aff3-876b26f21061-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/705b42f0-d921-4a74-9b5a-e3848ac16e40-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/96c77b22-f7ca-401e-b277-8953dd98776b-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a584e9d8-a3c6-4ccb-9dfe-b0fcdb6ed480-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a5992e26-7de1-4f8c-a5bf-9d1fc7d42e56-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ab4c0a42-973d-4514-87de-69816405448e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/acee4015-cefc-4850-8fc2-a0460d0b9130-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/be527b4b-ffae-4f3f-8988-ab305b6259c4-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d32ead04-8ea5-4887-be8d-cef7c2424b4b-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d57d4866-1a17-473f-bdb9-5cd125160f2c-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ddf6f61f-d62d-4946-9b54-bbceafac02f0-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e7778264-0a51-4737-931c-31294e471bbb-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/fc183d8a-e9cb-4f41-81c5-a4da32fe3eb2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-38-00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-38-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-42-24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-42-44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-45-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-46-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-47-48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-19_17-48-23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddt/sites.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddt/tickets.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ddt/tickets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions/verifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions/verifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/event_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/em_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/my_account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/my_account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ticket_purchase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ticket_purchase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/manage_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/manage_pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/web_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,17 +73,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for test_ticket_purchase.TestWeb.executor": "Debug",
-    "Python tests.Python tests for test_ticket_purchase.TestWeb.test_verify_login.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/pythonProject/FinalProject/PlanetCinema/pages/web_pages/ecom"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_ticket_purchase.TestWeb.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_ticket_purchase.TestWeb.test_verify_login.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/pythonProject/FinalProject/PlanetCinema/pages/web_pages/ecom&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\pythonProject\FinalProject\PlanetCinema\pages\web_pages\ecom" />
@@ -142,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708251256964</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Added features:&#10;* fixed issue with locator_is_not_clickable due to page animation, added 2 retries.">
+      <option name="closed" value="true" />
+      <created>1708288369750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708288369750</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Optimize imports">
+      <option name="closed" value="true" />
+      <created>1708290720836</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708290720836</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -152,7 +207,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start new project &#10;&quot;Planet Cinema Web Automation test&quot;" />
     <MESSAGE value="- Added features:&#10;* fixed issue with locator_is_not_clickable due to page animation, added 2 retries." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added features:&#10;* fixed issue with locator_is_not_clickable due to page animation, added 2 retries." />
+    <MESSAGE value="Optimize imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimize imports" />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
@@ -193,10 +249,10 @@
               <option name="initiateTms" value="1708251345944" />
               <option name="request" value="create a README file " />
               <option name="response" value="" />
-              <option name="responseDescription" value="Sure! I can help you create a README file. Here's a template you can use as a starting point:&#10;&#10;```&#10;# Project Name&#10;&#10;A brief description of your project.&#10;&#10;## Table of Contents&#10;&#10;- [Installation](#installation)&#10;- [Usage](#usage)&#10;- [Contributing](#contributing)&#10;- [License](#license)&#10;&#10;## Installation&#10;&#10;1. Clone the repository.&#10;2. Install the dependencies by running the following command:&#10;   ```&#10;   pip install -r requirements.txt&#10;   ```&#10;&#10;## Usage&#10;&#10;1. Set up the necessary configurations by editing the `config.py` file.&#10;2. Run the project by executing the following command:&#10;   ```&#10;   python main.py&#10;   ```&#10;&#10;## Contributing&#10;&#10;Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.&#10;&#10;## License&#10;&#10;This project is licensed under the [MIT License](LICENSE).&#10;```&#10;&#10;Feel free to modify the template according to your project's specific details and requirements. Once you have made the necessary changes, save the file as `README.md` in the root directory of your project.&#10;&#10;Let me know if there's anything else I can help you with!" />
+              <option name="responseDescription" value="Sure! I can help you create a README file. Here's a basic template for a README file:&#10;&#10;```&#10;# Project Name&#10;&#10;Short description or overview of the project.&#10;&#10;## Table of Contents&#10;&#10;- [Installation](#installation)&#10;- [Usage](#usage)&#10;- [Contributing](#contributing)&#10;- [License](#license)&#10;&#10;## Installation&#10;&#10;Instructions on how to install and set up the project. Include any dependencies or prerequisites that need to be installed.&#10;&#10;## Usage&#10;&#10;Instructions on how to use the project. Provide examples or code snippets if necessary.&#10;&#10;## Contributing&#10;&#10;Guidelines for contributing to the project. Include information on how to submit bug reports, feature requests, or pull requests.&#10;&#10;## License&#10;&#10;Specify the license under which the project is distributed. For example, you can use the MIT License, Apache License, or any other open-source license.&#10;&#10;```&#10;&#10;Feel free to customize this template according to your project's specific details and requirements. Let me know if you need any further assistance!" />
               <option name="responseFileName" value="" />
               <option name="responseFilePath" value="" />
-              <option name="responseTms" value="1708251350987" />
+              <option name="responseTms" value="1708353954349" />
               <option name="usedLocalFilePaths">
                 <list>
                   <option value="$PROJECT_DIR$/workflows/web_flows.py" />

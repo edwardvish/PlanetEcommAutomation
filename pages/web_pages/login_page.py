@@ -1,3 +1,6 @@
+import random
+import time
+
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,7 +34,9 @@ class LoginPage(UiActions):
 
     def login_to_app(self, user, password, is_fail):
         self.set_username(user)
+        time.sleep(random.randint(2, 8))
         self.set_password(password)
+        time.sleep(random.randint(2, 6))
         self.click_login_button()
         if is_fail:
             message = self.get_login_message()

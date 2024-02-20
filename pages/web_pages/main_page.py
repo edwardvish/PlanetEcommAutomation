@@ -1,4 +1,7 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+
 
 from extensions.ui_actions import UiActions
 
@@ -17,7 +20,7 @@ imax = (By.CSS_SELECTOR, 'a[href="/imax"]')
 fdx = (By.CSS_SELECTOR, 'a[aria-label="/4dx"]')
 screenx = (By.CSS_SELECTOR, 'a[aria-label="/screenx"]')
 vip = (By.CSS_SELECTOR, 'a[aria-label="/vip"]')
-first_movie = (By.CSS_SELECTOR, 'div[aria-label="1 / 56"]')
+now_playing_first = (By.CSS_SELECTOR, 'div[aria-label^="1 /"]')
 cinema_selection = (By.CSS_SELECTOR, 'button[data-id="select26"]')
 cinema_list = (By.XPATH, '((//ul[@role="listbox"])[2]/li[@role="option"]')
 
@@ -38,4 +41,12 @@ class MainPage(UiActions):
 
     def get_login_page(self):
         UiActions.click(self.driver, acc_login)
+
+    def select_eventmaster(self):
+        # Wait for the element to be present/visible
+        em = WebDriverWait(self.driver, 10).until(ec.visibility_of_element_located(now_playing_first))
+        # Scroll into view
+        self.driver.execute_script("arguments[0].scrollIntoView();", em)
+        # Assuming self.click is a custom method you've defined to click on elements
+        self.click(self.driver, now_playing_first)
 

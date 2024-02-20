@@ -23,6 +23,7 @@ class Verifications(UiActions):
     @allure.step('Verifies a part of the string')
     def verify_contains(value, string):
         assert value in string, 'The '+str(string)+' doesnt appear on screen'
+
     @staticmethod
     @allure.step('Soft verification(assert) of elements using smart-assertions')
     def soft_assert(elems):
