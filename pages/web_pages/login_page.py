@@ -32,15 +32,15 @@ class LoginPage(UiActions):
     def click_login_button(self):
         self.click(self.driver, login_button)
 
-    def login_to_app(self, user, password, is_fail):
-        self.set_username(user)
-        time.sleep(random.randint(2, 8))
-        self.set_password(password)
-        time.sleep(random.randint(2, 6))
-        self.click_login_button()
-        if is_fail:
-            message = self.get_login_message()
-            return message
+    # def login_to_app(self, user, password, is_fail):
+    #     self.set_username(user)
+    #     time.sleep(random.uniform(0.1,0.3))
+    #     self.set_password(password)
+    #     time.sleep(random.uniform(0.1,0.3))
+    #     self.click_login_button()
+    #     if is_fail:
+    #         message = self.get_login_message()
+    #         return message
 
     def get_login_message(self):
         try:

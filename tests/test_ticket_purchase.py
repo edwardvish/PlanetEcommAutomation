@@ -12,6 +12,7 @@ class TestWeb(BaseTest):
     coupons = WebFlows.coupon_code
     sites = WebFlows.sites
     location = get_data('location')
+    event_details = []
 
     @allure.title('Test01: Verify Login my account')
     @allure.description('This test verifies a successful login to my account')
@@ -26,13 +27,29 @@ class TestWeb(BaseTest):
     #     WebFlows.verify_locations_list(self.sites)
     #     WebFlows.choose_favourite_cinema(self.location)
 
-    def test_purchase_regular_ticket(self):
+    # This test selects the newest event master, select a day and time for a 2D screening
+    # The output is a navigation to and e-comm page
+    def test_select_event(self):
         WebFlows.accept_cookie_msg()
-        WebFlows.select_movie()
+        WebFlows.select_em()
         # time.sleep(15)
-        WebFlows.verify_movie_details()
         WebFlows.select_cinema()
+        time.sleep(0.5)
         WebFlows.verify_selected_location()
+        WebFlows.select_date()
+        self.event_details = WebFlows.get_event_details()
+        WebFlows.select_time()
+        # WebFlows.login_to_account(get_data('UserName'), get_data('Password'), 0)
+        WebFlows.continue_as_guest()
+        WebFlows.verify_ecom_page()
+        time.sleep(30)
+
+    def test_choose_tickets(self):
+        pass
+
+    # This test will verify the event details after the order was completed in the e-commerce
+    # def test_verify_event_details(self):
+    #     details = self.event_details
 
     def teardown_method(self):
-        WebFlows.grafana_home(self.driver)
+        WebFlows.cinema_home(self.driver)

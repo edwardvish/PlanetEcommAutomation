@@ -8,7 +8,7 @@ ticket_info = (By.XPATH, "//div[@class='form-actions']")#multiple
 ticket_summary = (By.XPATH, "//div[@class='tickets--total d-flex justify-content-between']")
 continue_button = (By.CSS_SELECTOR, ".btn-text")
 first_screening_button = (By.XPATH, "(//div[@class='qb-movie-info-column']/a[1])[1]")
-
+tickets_form = (By.CSS_SELECTOR,".tickets--form")
 
 class MainPage(UiActions):
     def __init__(self, driver):

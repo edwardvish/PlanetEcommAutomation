@@ -7,15 +7,21 @@ from extensions.ui_actions import UiActions
 from utils.common_ops import get_data
 
 event_title = (By.XPATH, '//li/h1')
-event_Details = (By.XPATH, "//div/p[@class='info-descr']")  # both date and running time data - ver against imdb
-day_select = (By.CSS_SELECTOR, 'button[data-automation-id="day_4"]')
+day = (By.CSS_SELECTOR, 'button[data-automation-id="day_4"]')
+screentimes_2d = (By.XPATH, "//a[contains(@data-attrs, '2d')"
+                            " and not(contains(@data-attrs, '4dx'))"
+                            " and not(contains(""@data-attrs, 'screenx'))"
+                            " and not(contains(@data-attrs, 'vip'))"
+                            " and not(contains(""@data-attrs,"" 'imax'))]")
 cinema_drop_down = (By.CSS_SELECTOR, 'button[data-id="select8"]')
 cinema_list = (By.XPATH, "(//ul[@role='listbox'])[3]//li//a//span[@class='text']")
-first_screening_button = (By.XPATH, "(//div[@class='qb-movie-info-column']/a[1])[1]")
 book_now_button = (By.CSS_SELECTOR, "a[aria-label='BOOK NOW']")
 selected_location = (By.CSS_SELECTOR, ".qb-cinema-name")
+event_date = (By.CSS_SELECTOR, ".col-xs-12.mb-sm h5")
+login_button = (By.CSS_SELECTOR, 'button[data-automation-id="login-button"]')
+buy_as_guest_button = (By.CSS_SELECTOR, 'button[data-automation-id="guest-button"]')
+timeout = get_data('WaitTime')
 
-timeout=get_data('WaitTime')
 
 class EMPage(UiActions):
     def __init__(self, driver):
@@ -25,14 +31,11 @@ class EMPage(UiActions):
         title = UiActions.get_text(self.driver, event_title)
         return title
 
-    def get_event_details(self):
-        details = UiActions.find_multiple(self.driver, *event_Details)
-        release_date = UiActions.get_text(details[0])
-        duration = UiActions.get_text(details[1])
-        return release_date, duration
-
-    def choose_screening_time(self):
-        UiActions.click(self.driver, first_screening_button)
+    # def get_event_details(self):
+    #     details = UiActions.find_multiple(self.driver, *event_Details)
+    #     release_date = UiActions.get_text(details[0])
+    #     duration = UiActions.get_text(details[1])
+    #     return release_date, duration
 
     def select_cinema_location(self):
         loc = get_data('location')
@@ -51,3 +54,26 @@ class EMPage(UiActions):
 
     def get_cinema_location(self):
         return self.get_text(self.driver, selected_location)
+
+    def select_day(self):
+        self.click(self.driver, day)
+
+    def select_time(self):
+        events = self.get_event_times()
+        events[0].click()
+
+    def get_em_title(self):
+        return self.get_text(self.driver, event_title)
+
+    def get_event_date(self):
+        return self.get_text(self.driver, event_date)
+
+    def get_event_times(self):
+        return self.find_multiple(self.driver, *screentimes_2d)
+
+    def click_login_em_page(self):
+        self.click(self.driver,login_button)
+
+    def click_continue_as_guest(self):
+        self.click(self.driver, buy_as_guest_button)
+

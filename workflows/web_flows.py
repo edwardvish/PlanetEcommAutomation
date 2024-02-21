@@ -3,6 +3,7 @@ import time
 import allure
 import pages.web_pages.login_page
 import pages.web_pages.main_page
+import pages.web_pages.ecom.ticket_selection_page as ticket_selection
 import pages.web_pages.em_page as em_page
 import pages.web_pages.my_account_page as my_account_page
 import utils.manage_pages as page
@@ -40,11 +41,17 @@ class WebFlows:
     @staticmethod
     @allure.step('Login to account')
     def login_to_account(email: str, password: str, is_fail: int):
-        page.web_login_page.login_to_app(email, password, is_fail)
+        wait_for_element(Oper.Element_Clickable, pages.web_pages.em_page.login_button)
+        page.web_em_page.click_login_em_page()
+        page.web_login_page.set_username(email)
+        time.sleep(5)
+        page.web_login_page.set_password(password)
+        page.web_login_page.click_login_button()
         if is_fail:
             actual = page.web_login_page.get_login_message()
             Verifications.verify_equals(str(actual), 'Something went wrong')
-        wait_for_element(Oper.Element_Clickable, pages.web_pages.login_page.login_button)
+
+
 
     @staticmethod
     @allure.step('Verify my login page title')
@@ -89,15 +96,48 @@ class WebFlows:
         expected = get_data('location')
         Verifications.verify_equals(actual.lower(), expected.lower())
 
-
-
     @staticmethod
     @allure.step('Scroll to the first movie and select it ')
-    def select_movie():
+    def select_em():
         page.web_main_page.select_eventmaster()
         wait_for_element(Oper.Element_Displayed, em_page.book_now_button)
 
     @staticmethod
-    @allure.step('Return back to the main grafana screen')
-    def grafana_home(driver):
+    @allure.step('get movie details')
+    def get_event_details():
+        em_name = page.web_em_page.get_em_title()
+        event_date = page.web_em_page.get_event_date()
+        t = page.web_em_page.get_event_times()
+        event_time = t[0].text
+        return em_name, event_date, event_time
+
+    @staticmethod
+    @allure.step('Select a screening day')
+    def select_date():
+        page.web_em_page.select_day()
+
+    @staticmethod
+    @allure.step('Select a screening time')
+    def select_time():
+        page.web_em_page.select_time()
+
+    @staticmethod
+    @allure.step('Wait until ecom loads and verify')
+    def verify_ecom_page():
+        wait_for_element(Oper.Element_Displayed, ticket_selection.tickets_form)
+
+    @staticmethod
+    @allure.step('Proceed to ticket selection as guest')
+    def continue_as_guest():
+        wait_for_element(Oper.Element_Clickable,em_page.buy_as_guest_button)
+        page.web_em_page.click_continue_as_guest()
+
+    @staticmethod
+    @allure.step('Back to Homepage')
+    def cinema_home(driver):
         driver.get(get_data('URL'))
+
+
+
+
+

@@ -20,7 +20,7 @@ imax = (By.CSS_SELECTOR, 'a[href="/imax"]')
 fdx = (By.CSS_SELECTOR, 'a[aria-label="/4dx"]')
 screenx = (By.CSS_SELECTOR, 'a[aria-label="/screenx"]')
 vip = (By.CSS_SELECTOR, 'a[aria-label="/vip"]')
-now_playing_first = (By.CSS_SELECTOR, 'div[aria-label^="1 /"]')
+now_playing_first = (By.CSS_SELECTOR, 'div[aria-label^="2 /"]')
 cinema_selection = (By.CSS_SELECTOR, 'button[data-id="select26"]')
 cinema_list = (By.XPATH, '((//ul[@role="listbox"])[2]/li[@role="option"]')
 

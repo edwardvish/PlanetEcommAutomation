@@ -1,3 +1,6 @@
+import random
+import time
+
 import allure
 
 import tests.conftest as conf
@@ -31,7 +34,9 @@ class UiActions:
     def set_text(driver, locator, value: str):
         element = UiActions.find(driver, *locator)
         element.clear()
-        element.send_keys(value)
+        for char in value:
+            element.send_keys(char)
+            time.sleep(random.uniform(0.2,0.4))
 
     @staticmethod
     @allure.step('Extract the text value of an object')
