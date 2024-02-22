@@ -1,4 +1,5 @@
 import tests.conftest as conft
+from pages.web_pages.ecom.ticket_selection_page import Ecom_tickets
 from pages.web_pages.em_page import EMPage
 from pages.web_pages.main_page import MainPage
 from pages.web_pages.login_page import LoginPage
@@ -9,6 +10,7 @@ web_login_page = None
 web_main_page = None
 web_account_page = None
 web_em_page = None
+web_ecom_ticket = None
 web_flows = None
 
 
@@ -18,6 +20,7 @@ class ManagePages:
         globals()['web_login_page'] = LoginPage(conft.driver)
         globals()['web_main_page'] = MainPage(conft.driver)
         globals()['web_account_page'] = MyAccountPage(conft.driver)
+        globals()['web_ecom_ticket'] = Ecom_tickets(conft.driver)
         globals()['web_em_page'] = EMPage(conft.driver)
 
 

@@ -1,4 +1,5 @@
 import time
+import re
 
 import allure
 import pages.web_pages.login_page
@@ -8,7 +9,7 @@ import pages.web_pages.em_page as em_page
 import pages.web_pages.my_account_page as my_account_page
 import utils.manage_pages as page
 from extensions.verifications import Verifications
-from utils.common_ops import wait_for_element, Oper, get_data, read_csv
+from utils.common_ops import wait_for_element, Oper, get_data, read_csv, read_txt
 
 
 # from pages.web_pages.main_page import MainPage
@@ -17,6 +18,8 @@ class WebFlows:
     coupon_code = read_csv(get_data('coupon_codes'))
     ticket_info = read_csv(get_data('ticket_info'))
     sites = read_csv(get_data('sites'))
+    special_message = read_txt(get_data('special_message_dir'))
+
 
     @staticmethod
     @allure.step('Wait for cookies button to appear and accept all cookies')
@@ -50,8 +53,6 @@ class WebFlows:
         if is_fail:
             actual = page.web_login_page.get_login_message()
             Verifications.verify_equals(str(actual), 'Something went wrong')
-
-
 
     @staticmethod
     @allure.step('Verify my login page title')
@@ -131,6 +132,38 @@ class WebFlows:
     def continue_as_guest():
         wait_for_element(Oper.Element_Clickable,em_page.buy_as_guest_button)
         page.web_em_page.click_continue_as_guest()
+
+    @staticmethod
+    @allure.step('Verify the event details based on the choices')
+    def verify_event_details(event_details):
+        event_title = page.web_ecom_ticket.get_event_title()
+        event_date = page.web_ecom_ticket.get_event_date()
+        event_time = page.web_ecom_ticket.get_event_time()
+        details = [event_title, event_date, event_time]
+        Verifications.verify_equals(details, event_details)
+
+    @staticmethod
+    @allure.step('Verify ticket names and prices')
+    def verify_ticket_details(details):
+        names = page.web_ecom_ticket.get_ticket_names()
+        prices = page.web_ecom_ticket.get_ticket_prices()
+        page_data = dict(zip(names, prices))
+        for row in details:
+            ticket_name = row['Name']
+            ticket_price = row['Price'].replace(" NIS", "")
+            if ticket_name in page_data:
+                webpage_price = re.sub(r'[\u202a\u202c]', '', page_data[ticket_name].replace(" NIS", ""))
+                Verifications.verify_equals(webpage_price, ticket_price)
+
+            else:
+                print(f"Warning: Ticket name '{ticket_name}' not found on webpage.")
+
+    @staticmethod
+    @allure.step('Special message verification')
+    def verify_special_message(message: str):
+        actual = page.web_ecom_ticket.get_tg_message()
+        Verifications.verify_equals(actual, message)
+
 
     @staticmethod
     @allure.step('Back to Homepage')

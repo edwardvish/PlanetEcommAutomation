@@ -16,6 +16,10 @@ def get_data(node_name):
     return root.find('.//' + node_name).text
 
 
+@allure.step('Parse the content of a text file')
+def read_txt(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read().strip()
 
 
 @allure.step('Waiting for element to appear in the webpage')
