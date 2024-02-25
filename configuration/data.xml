@@ -14,6 +14,8 @@
     <!--<user_data_dir>./ddt/coupons.csv</user_data_dir>-->
     <coupon_codes>ddt/coupons.csv</coupon_codes>
     <ticket_info>ddt/tickets.csv</ticket_info>
+    <event_details_dir>ddt/event_details.json</event_details_dir>
+    <ecommerce_URL>ddt/ecom_url.json</ecommerce_URL>
     <special_message_dir>ddt/ticketgroup_message.txt</special_message_dir>
     <Applitools>false</Applitools> <!--true / false-->
     <ApplitoolsAPI>97kBX5NUm9MHlsURpcVpkZXXJno6FmmihP5z8RUXqSCk110</ApplitoolsAPI>

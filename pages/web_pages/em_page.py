@@ -4,10 +4,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from extensions.ui_actions import UiActions
-from utils.common_ops import get_data
+from utils.common_ops import get_data, read_from_json
 
 event_title = (By.XPATH, '//li/h1')
-day = (By.CSS_SELECTOR, 'button[data-automation-id="day_4"]')
+day = (By.CSS_SELECTOR, 'button[data-automation-id="day_2"]')
 screentimes_2d = (By.XPATH, "//a[contains(@data-attrs, '2d')"
                             " and not(contains(@data-attrs, '4dx'))"
                             " and not(contains(""@data-attrs, 'screenx'))"

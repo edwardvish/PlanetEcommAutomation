@@ -5,39 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="147ba0fe-d7f7-43f4-aaa2-368c0061ce9e" name="Changes" comment="Added:&#10;- new tests">
-      <change afterPath="$PROJECT_DIR$/allure-results/090c8150-444f-4f92-ad9e-c5300ccb6b5a-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0bb29db9-4146-44e1-a37f-b093486622d2-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0e539176-4820-46e6-80e3-7a01fb961299-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1f7dfb7c-21a1-4806-a9a2-dbecf5aa5368-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/20f78668-bf53-4b86-abb9-24ac62ef2013-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/28fecbbf-03b3-46a1-a9d3-1d506328df32-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/292da916-3ee5-4bc7-9166-5a4709d95c7e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2d799d2f-23c0-4e04-a5f6-0c2842baf99a-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/32eb9a51-01f9-4572-a14a-bae6b5e4da3f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/48cb341e-d6ba-4289-ae7b-77cffefed583-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4c2d28cd-2056-4396-a9fc-c454d7fba0b1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/530272c9-4f13-4c07-a02e-52418a9f1d51-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/63f2f173-fa41-435f-b3db-63907686cabc-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/817bf97b-c55b-47d6-ae3f-cc47d462b008-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8b1de7cd-1eca-4c65-8799-e2c371c8d519-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c7c02f7-0c78-49b5-8512-ab34dc484687-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a4189938-e6af-425b-b38b-e505837dab8f-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a70760c4-18df-4760-8ab0-b87b5e5cf0f4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bad06cf9-54fa-4ef5-8472-df87ca0631ce-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bc0bb34c-61f7-4fcf-9d4a-95f20f3fe474-attachment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c3316746-7cab-414d-b698-fb07e0804fab-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/e8e110ab-7002-4984-8d70-331364dc52c4-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ed50d8a1-55a1-46cf-8440-be5c9a7e6af4-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-22_16-39-14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-22_16-41-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-22_16-45-31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1a42f42a-81a8-4b4a-8dff-42437e4befe2-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1a82a4b1-2f25-4a7c-94cb-76ef4c1a2929-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/95832a95-dcb4-4c75-991f-962bbcfea0a1-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/abcdb2d5-1cc8-4672-9ad8-1483f7adf116-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e49ee2ca-06dc-4305-8ac6-be1ba7cec09f-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-screen-shots/screenshot_2024-02-25_13-35-44.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ddt/event_details.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration/data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/data.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddt/ticketgroup_message.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ddt/ticketgroup_message.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/web_pages/ecom/ticket_selection_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/ecom/ticket_selection_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web_pages/em_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web_pages/em_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_ticket_purchase.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ticket_purchase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/common_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/common_ops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/manage_pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/manage_pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workflows/web_flows.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflows/web_flows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708528046277</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added:&#10;- new tests">
+      <option name="closed" value="true" />
+      <created>1708622194664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708622194664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
