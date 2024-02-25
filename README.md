@@ -1,44 +1,36 @@
-Event Selection Automation Tests
+# Automated Event Selection and Verification Tests
 
-This project contains automated tests for selecting events and verifying event details on a web platform using Python, Selenium, and Allure for reporting. It automates the process of selecting an event, day, and time, proceeding through an e-commerce page, and verifying ticket details against a CSV file.
+This Python project uses Selenium and Allure for automated web testing, specifically for event selection, verification of event details, and ticket prices. It is structured around a base testing framework that integrates utility functions and web workflows to interact with a specified eCommerce platform.
 
-Features
-Event Selection: Automates the selection of events, cinemas, and times.
-Location Verification: Verifies that the selected location matches the expected one.
-E-commerce Integration: Checks the transition from selecting an event to the e-commerce page.
-Ticket Verification: Validates ticket names and prices against a predefined CSV file.
-Reporting: Utilizes Allure for enhanced test reporting.
-Prerequisites
-Before running the tests, ensure you have the following installed:
+## Features
 
-Python 3.x
-Selenium WebDriver
-Allure (for reporting)
-Additionally, you'll need to set up your environment with necessary web drivers for Selenium and ensure they are in your PATH.
+- Event selection based on location, date, and time
+- Verification of event details and special messages
+- Validation of ticket names and prices against provided data
+- Utilizes Allure for enhanced test reporting
 
-Installation
-Clone this repository to your local machine:
+## Prerequisites
 
-git clone https://github.com/yourgithubusername/event-selection-automation.git
-cd event-selection-automation
-Install the required Python dependencies:
+Before running these tests, ensure you have the following installed:
+- Python 4 or higher
+- Selenium WebDriver
+- Allure Framework
+
+Additionally, ensure you have access to the required external data files and URLs specified within the utility functions (`utils/common_ops.py`).
+
+## Installation
+
+1. Clone this repository to your local machine.
+2. Install the required Python packages:
 
 pip install -r requirements.txt
-Running the Tests
-To run the automated tests, execute the following command from the root directory of the project:
-
-pytest
-For generating an Allure report, run:
 
 
-pytest --alluredir=/path/to/results/directory
-And to view the report, use:
+## Running the tests 
+pytest -s -v .\tests\test_ticket_purchase.py --alluredir=.\allure-results
+
+## View Allure report 
+allure serve .\allure-results\
 
 
-allure serve /path/to/results/directory
-Contributing
-Contributions to enhance the automation tests are welcome. Please follow the standard fork and pull request workflow.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
